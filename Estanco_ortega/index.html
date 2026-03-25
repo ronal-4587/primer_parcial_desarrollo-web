@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estanco Ortega - Catálogo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="main-body">
+    <!-- Contenedor para poner Sidebar -->
+    <div id="sidebar-container"></div>
+
+    <div class="main-wrapper">
+        <!-- Contenedor para poner Header -->
+        <div id="header-container"></div>
+
+        <main class="main-content">
+            <section id="inicio" class="hero-section">
+                <h1>Bienvenido a Estanco Ortega</h1>
+                <p>Descubre nuestra selección premium de licores.</p>
+            </section>
+
+            <section id="catalogo" class="catalog-section">
+                <h2>Nuestro Catálogo</h2>
+
+                <div class="products-grid" id="products-container">
+                    <!-- Los productos se pondran aquí-->
+                </div>
+            </section>
+            <section id="sobre-nosotros" class="catalog-section about-section">
+                <h2 class="section-title">👥 Sobre Nosotros</h2>
+                <div class="about-text">
+                    <p class="mb-15"><strong>Estanco Ortega</strong> es más que una licorería; somos una tradición de calidad y confianza. Nacimos con la firme convicción de ofrecer la más exclusiva y selecta variedad de licores nacionales e importados para acompañar tus mejores celebraciones y eventos.</p>
+                    <p>Ya sea para una reunión casual entre amigos, un evento corporativo o un momento especial de brindis, en <strong>Estanco Ortega</strong> encontrarás la bebida perfecta, respaldada por la garantía del mejor servicio, originalidad en cada botella y la mejor relación calidad-precio.</p>
+                </div>
+            </section>
+
+            <section id="contacto" class="catalog-section contact-section">
+                <h2 class="section-title">📞 Contáctanos</h2>
+                <div class="contact-box">
+                    <h3 class="contact-subtitle">¿Listo para celebrar?</h3>
+                    <p class="contact-desc">¿Tienes alguna duda sobre nuestro inventario o deseas realizar un pedido al por mayor para tu evento? Escríbenos directamente por nuestro canal rápido y te daremos asesoría inmediata.</p>
+                    <a href="https://wa.me/573175357145" target="_blank" class="btn-whatsapp">
+                        📱 Escríbenos por WhatsApp
+                    </a>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Contenedor para poner Footer -->
+        <div id="footer-container"></div>
+    </div>
+
+    <!-- carrito -->
+    <div id="cart-modal" class="modal-overlay">
+        <div class="modal-content side-panel">
+            <div class="modal-header">
+                <h2 class="modal-title">🛒 Carrito</h2>
+                <button class="close-modal" id="close-cart-btn">&times;</button>
+            </div>
+            <div id="cart-items" class="cart-items">
+                <p class="empty-cart-msg">Tu carrito está vacío.</p>
+            </div>
+            <div class="cart-footer">
+                <h3 class="cart-total-title">Total: <span id="cart-total" class="cart-total-amount">$ 0</span></h3>
+                <button id="btn-checkout" class="btn-primary mt-15" style="display:none;">Proceder al Pago</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- checkout -->
+    <div id="checkout-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">💳 Finalizar Compra</h2>
+                <button class="close-modal" id="close-checkout-btn">&times;</button>
+            </div>
+            <form id="checkout-form" class="checkout-form">
+                <h3 class="checkout-subtitle">Datos del Cliente</h3>
+                <div class="input-group">
+                    <label>Nombre Completo</label>
+                    <input type="text" id="chk-name" required>
+                </div>
+                <div class="input-group">
+                    <label>Documento / NIT</label>
+                    <input type="text" id="chk-doc" required>
+                </div>
+                <div class="input-group">
+                    <label>Dirección de Envío</label>
+                    <input type="text" id="chk-addr" required>
+                </div>
+                
+                <h3 class="checkout-subtitle checkout-subtitle.mt-20">Método de Pago</h3>
+                <div class="input-group">
+                    <select id="chk-payment" required class="checkout-select">
+                        <option value="">Seleccione su método de pago...</option>
+                        <option value="Tarjeta">Tarjeta Débito/Crédito</option>
+                        <option value="Nequi">Nequi</option>
+                        <option value="DaviPlata">DaviPlata</option>
+                        <option value="Efectivo">Pago en Efectivo</option>
+                    </select>
+                </div>
+                
+                <div id="payment-details-nequi" class="payment-details">
+                    <label for="chk-phone">Número de Celular</label>
+                    <input type="tel" id="chk-phone" placeholder="Ej: 3101234567" pattern="[0-9]*" maxlength="15">
+                </div>
+
+                <div id="payment-details-card" class="payment-details">
+                    <label for="chk-card-num">Número de Tarjeta</label>
+                    <input type="text" id="chk-card-num" placeholder="0000 0000 0000 0000" maxlength="19" class="mb-12">
+                    
+                    <div class="payment-row">
+                        <div class="payment-col">
+                            <label for="chk-card-exp">Fecha Exp.</label>
+                            <input type="text" id="chk-card-exp" placeholder="MM/YY" maxlength="5">
+                        </div>
+                        <div class="payment-col">
+                            <label for="chk-card-cvv">CVV</label>
+                            <input type="password" id="chk-card-cvv" placeholder="123" maxlength="4">
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn-primary btn-pay">💳 Pagar y Generar Factura (PDF)</button>
+            </form>
+        </div>
+    </div>
+
+    <template id="product-template">
+        <product-card id="" name="" price="" description="" image=""></product-card>
+    </template>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    
+    
+    <script src="js/components.js"></script>
+    
+    <script src="js/cart.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>
