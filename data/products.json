@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "Whisky Buchanan's Deluxe 12 Años x 750ml",
+    "price": 140000,
+    "description": "Un clásico escocés con notas suaves de cítricos y chocolate. Ideal para compartir.",
+    "image": "img/producto_1.png"
+  },
+  {
+    "id": 2,
+    "name": "Whisky Old Parr 12 Años x 750ml",
+    "price": 135000,
+    "description": "Suave, maduro y accesible. Sabor característico y aroma intenso.",
+    "image": "img/producto_2.png"
+  },
+  {
+    "id": 3,
+    "name": "Aguardiente Antioqueño Sin Azúcar x 750ml",
+    "price": 45000,
+    "description": "El preferido en Colombia, puro, con sabor anisado y refrescante.",
+    "image": "img/producto_3.png"
+  },
+  {
+    "id": 4,
+    "name": "Aguardiente Blanco del Valle Sin Azúcar x 750ml",
+    "price": 43000,
+    "description": "Tradición del Valle. Suave y sin azúcar para disfrutar helado.",
+    "image": "img/producto_4.png"
+  },
+  {
+    "id": 5,
+    "name": "Tequila Don Julio Reposado x 700ml",
+    "price": 280000,
+    "description": "Envejecido en roble americano para un acabado sedoso y cálido.",
+    "image": "img/producto_5.png"
+  },
+  {
+    "id": 6,
+    "name": "Tequila Jose Cuervo Especial Reposado x 750ml",
+    "price": 95000,
+    "description": "El tequila más vendido del mundo. Perfecto para margaritas tradicionales.",
+    "image": "img/producto_6.png"
+  },
+  {
+    "id": 7,
+    "name": "Ron Viejo de Caldas 3 Años x 750ml",
+    "price": 50000,
+    "description": "Ron añejado a gran altura, otorgando un sabor excepcional y equilibrado.",
+    "image": "img/producto_7.png"
+  },
+  {
+    "id": 8,
+    "name": "Ron La Hechicera x 700ml",
+    "price": 195000,
+    "description": "Ron premium colombiano extra añejo. Sin azúcar añadida, con notas a cacao.",
+    "image": "img/producto_8.png"
+  },
+  {
+    "id": 9,
+    "name": "Vodka Smirnoff No. 21 x 700ml",
+    "price": 58000,
+    "description": "Vodka clásico, triple destilación. Perfecto para mezclar.",
+    "image": "img/producto_9.png"
+  },
+  {
+    "id": 10,
+    "name": "Vino Tinto Gato Negro Cabernet Sauvignon x 750ml",
+    "price": 35000,
+    "description": "Vino chileno con intenso color rubí, aromas a frutos rojos oscuros.",
+    "image": "img/producto_10.png"
+  },
+  {
+    "id": 11,
+    "name": "Cerveza Aguila Botella x 330ml",
+    "price": 3500,
+    "description": "Cerveza tipo lager, la más consumida en Colombia. Refrescante y dorada.",
+    "image": "img/producto_11.png"
+  },
+  {
+    "id": 12,
+    "name": "Cerveza Poker Lata x 330ml",
+    "price": 3500,
+    "description": "El amigo ideal para parchar. Sabor balanceado y muy refrescante.",
+    "image": "img/producto_12.png"
+  },
+  {
+    "id": 13,
+    "name": "Cerveza Club Colombia Dorada Botella x 330ml",
+    "price": 4500,
+    "description": "Cerveza premium colombiana. Malta suave y amargura equilibrada.",
+    "image": "img/producto_13.png"
+  },
+  {
+    "id": 14,
+    "name": "Cerveza Corona Extra x 355ml",
+    "price": 6500,
+    "description": "Cerveza mexicana internacional. Símbolo de verano, perfecta con limón.",
+    "image": "img/producto_14.png"
+  },
+  {
+    "id": 15,
+    "name": "Cerveza Stella Artois Botella x 330ml",
+    "price": 6000,
+    "description": "Pilsner belga de renombre. Sabor sofisticado e ingredientes selectos.",
+    "image": "img/producto_15.png"
+  }
+]
